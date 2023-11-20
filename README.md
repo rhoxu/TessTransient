@@ -1,2 +1,3 @@
-# TessTransient
-Transient event detector pipeline for TESS 
+# TessTransient : A transient event detection pipeline for TESS.
+
+
