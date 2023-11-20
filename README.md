@@ -1,4 +1,4 @@
-# TessTransient: A transient event detection pipeline for TESS.
+## TessTransient: # A transient event detection pipeline for TESS.
 
 This pipeline utilises the MAST archive and TESSreduce (see https://github.com/CheerfulUser/TESSreduce) to search for poorly localised transient events in TESS data. 
 
@@ -6,5 +6,5 @@ To get started, download this repository and save it somewhere accessible. Impor
 
 If you have any questions whatsoever, flick me (Hugh) an email at hugh11rox@gmail.com!
 
-
+To come: non detection limiting magnitudes etc..
 
