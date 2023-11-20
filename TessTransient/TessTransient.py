@@ -1,5 +1,4 @@
 import os
-import sys
 from glob import glob
 
 import tessreduce as tr
@@ -10,19 +9,14 @@ import matplotlib.patches as patches
 import math
 import scipy
 
-
 from time import time as t
-import datetime
 
 from astrocut import CubeFactory
 from astrocut import CutoutFactory
 from astropy.io import fits
-from astropy import wcs
 from astropy.time import Time
 from astropy.io.fits import getdata
 from astropy.table import Table
-from astropy.visualization import (SqrtStretch, ImageNormalize)
-from astropy import units as u
 
 from find_cut import FindCut
 from downloader import *
@@ -96,6 +90,8 @@ class TessTransient():
             0 = no printout , 1 (default) = partial printout, 2 = full printout
         path : str
             location of folder, creates temporary folder if None 
+        eventname : str
+            name of event to be encoded into downloads
         delete : bool
             deletes previous temporary folder if True
         
@@ -1257,7 +1253,7 @@ class TessTransient():
         _Print_buff(70,self.eventname)
         print('\n')
         self.entire_chip()
-        self.find_neighbour_chips()
+        self.find_neighbour_chips(verbose=False)
         
         if self.neighbours is not None:
             print('\n')
