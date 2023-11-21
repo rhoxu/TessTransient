@@ -247,7 +247,7 @@ class TessTransient():
 
         return obs
 
-    def download(self,cam=None,chip=None,number=None):
+    def download(self,number=None,cam=None,chip=None):
         """
         Function for downloading FFIs from MAST archive.
 
