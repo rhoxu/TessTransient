@@ -18,9 +18,9 @@ from astropy.time import Time
 from astropy.io.fits import getdata
 from astropy.table import Table
 
-from find_cut import FindCut
-from downloader import *
-from detector import TessDetector
+from .find_cut import FindCut
+from .downloader import *
+from .detector import TessDetector
 
 def _Save_space(Save,delete=False):
     """

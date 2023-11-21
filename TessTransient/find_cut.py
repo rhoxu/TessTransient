@@ -2,11 +2,6 @@ from glob import glob
 import numpy as np
 import math
 
-from time import time as t
-import datetime
-
-from astrocut import CubeFactory
-from astrocut import CutoutFactory
 from astropy.io import fits
 from astropy import wcs
 
