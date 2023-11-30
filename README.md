@@ -4,6 +4,8 @@ This pipeline utilises the MAST archive and TESSreduce (see https://github.com/C
 
 To get started, download this repository and navigate into it via a command terminal. Make sure you are in the home folder containing setup.py, and then run `pip install .` to install the package. Have a look at the example notebook `example.ipynb` - input an estimation for an event's right ascension and declination, and an associated one dimensional position error, as well as the time of the event. There are many functions and additional parameters to take into consideration; hopefully the docs in the `TessTransient` folder are commented well enough. 
 
+The `TESSreduce-master` folder contains a really small change to the regular TESSreduce package (lines 578-581 in tessreduce/tessreduce.py `spacetime_lookup` function) - just navigate into the `TESSreduce-master` directory and run `pip install .`.
+
 If you have any questions whatsoever, flick me (Hugh) an email at hugh11rox@gmail.com!
 
 To come: non detection limiting magnitudes etc..
