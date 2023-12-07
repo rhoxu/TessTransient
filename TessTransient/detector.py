@@ -467,7 +467,7 @@ class TessDetector():
             
             counter = 1
 
-            for event in eventmask:
+            for event in self.eventmask:
                 ax.scatter(event[1],event[0],marker='s',color='r',s=2,edgecolor='black')
                 point = (np.median(event[1]),np.median(event[0])+5)
                 ax.annotate('Event ' + str(counter),point,fontsize=10)
