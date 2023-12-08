@@ -298,7 +298,7 @@ class FindCut():
             which border to look at, defines conditions. 
         """
         
-        ellipse = self._get_err_px(self.wcs)
+        ellipse = self._get_err_px()
 
         # -- Generates ellipse cutoff conditions based on border direction -- #
         if border == 'left':
