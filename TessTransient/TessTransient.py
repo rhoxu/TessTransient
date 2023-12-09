@@ -1326,6 +1326,7 @@ class TessTransient():
             self.Detector.eventtime = self.eventtime    # if eventtime has changed, adjust accordingly
 
         if initialise:
+            self.find_cuts(cam,chip,plot=False)
             self.Detector = TessDetector(self.Cuts,self.eventname,self.eventtime,self.sector,cam,chip,cut)
 
         # -- Detect! -- #
